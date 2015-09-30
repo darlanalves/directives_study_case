@@ -1,0 +1,13 @@
+{
+	"name": "directives-study-case",
+	"description": "Foo bar baz",
+	"version": "0.0.0",
+	"main": "src/directives-study-case.js",
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test"
+	]
+}
