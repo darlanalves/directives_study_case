@@ -19,13 +19,13 @@ function buildRelease() {
 
 	multipipe(
 		gulp.src('src/**/*.js'),
-		concat('directives_study_case.js'),
+		// concat('directives_study_case.js'),
 		babel(babelOptions),
-		wrap(wrapper),
+		// wrap(wrapper),
 		gulp.dest('dist'),
-		uglify(),
-		rename({ suffix: '.min' }),
-		gulp.dest('dist'),
+		// uglify(),
+		// rename({ suffix: '.min' }),
+		// gulp.dest('dist'),
 		onError
 	);
 }
@@ -39,5 +39,9 @@ function onError(err) {
 
 	console.log('Done.');
 }
+
+gulp.task('watch', function () {
+	gulp.watch('src/*.js', ['build']);
+});
 
 gulp.task('build', buildRelease);

@@ -1,0 +1,7 @@
+<div class"tabset">
+	<ul>
+		<li ng-repeat="tab in ctrl.tabList" ng-click="ctrl.activateTab($index)">{{tab.title}}</li>
+	</ul>
+
+	<div ng-transclude></div>
+</div>

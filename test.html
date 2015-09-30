@@ -1,0 +1,24 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="dist/module.js"></script>
+		<script src="dist/tab.js"></script>
+		<script src="dist/tabset.js"></script>
+
+		<div ng-app="app">
+			<foo>
+				<tabset>
+					<tab title="{{options.foo}}">
+						<div class="tab-one"></div>
+					</tab>
+					<tab title="{{options.foo}}">
+						<div class="tab-two"></div>
+					</tab>
+				</tabset>
+			</foo>
+		</div>
+	</body>
+</html>
