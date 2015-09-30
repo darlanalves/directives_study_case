@@ -7,7 +7,11 @@ module.exports = function(config) {
 	config.set({
 		browsers: ['PhantomJS'],
 		frameworks: ['jasmine'],
-		files: ['src/**/*.js', 'test/**/*.spec.js'],
+		files: [
+		'bower_components/angular/angular.js',
+		'src/**/*.js',
+		'test/**/*.spec.js'
+		],
 		preprocessors: {
 			'src/**/*.js': ['babel'],
 			// uncomment to enable ES6 on tests too
