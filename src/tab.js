@@ -23,6 +23,8 @@ function tabDirective() {
 		link: function ($scope, $element, $attrs, ctrls) {
 			var tabset, tab;
 			[tabset, tab] = ctrls;
+
+			tabset.register(tab);
 		}
 	};
 }
